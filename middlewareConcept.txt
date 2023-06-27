@@ -1,0 +1,19 @@
+// What is middleware?
+// middleware is a function that have access to req and res object and next function
+// when client is request to server then the requset traverse on different functions before send the response to client.this concept is middleware.And any middleware is applicable to to send response form any time
+
+// properties of middleware
+// 1. executes any code.
+// 2. can change req and res objects
+
+// 3. can capable call res.end() without calling the next middleware that means can end request/response cycle.
+// 4. call next middleware by next()
+
+// 5. throw and catch error if the error is not handled then the app should be crashed.and error is handled by Error handling middleware.
+
+Types of middleware->
+1. application level middleware.
+2. router level middleware.
+3. error handling middleware.
+4. built-in middleware.-->e.g- express.json() and express.static()
+5. Also have thirdParty middleware.(e.g cookie-Parser.)
